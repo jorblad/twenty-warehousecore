@@ -9,3 +9,7 @@ Run `yarn twenty help` to list all available commands.
 - [Twenty Apps documentation](https://docs.twenty.com/developers/extend/apps/getting-started)
 - [twenty-sdk CLI reference](https://www.npmjs.com/package/twenty-sdk)
 - [Discord](https://discord.gg/cx5n4Jzs57)
+
+## Integration Design
+
+- [Bidirectional Sync Blueprint](./BIDIRECTIONAL_SYNC_BLUEPRINT.md)

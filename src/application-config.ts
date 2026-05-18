@@ -1,21 +1,15 @@
 import { defineApplication } from 'twenty-sdk/define';
 
-// Register custom definitions via side-effect imports so Twenty sync includes
-// these objects/fields/views/navigation items in the app manifest.
-import 'src/objects/job-product-requirement.object';
-import 'src/objects/warehouse-product.object';
-import 'src/fields/warehouse-job-id-on-opportunity.field';
-import 'src/fields/job-code-on-opportunity.field';
-import 'src/fields/job-dates-on-opportunity.field';
-import 'src/fields/job-end-date-on-opportunity.field';
-import 'src/fields/job-requirements-on-opportunity.field';
-import 'src/fields/opportunity-on-job-requirement.field';
-import 'src/fields/product-on-job-requirement.field';
-import 'src/fields/job-requirements-on-wh-product.field';
-import 'src/views/job-product-requirements.view';
-import 'src/views/warehouse-products.view';
-import 'src/navigation-menu-items/job-product-requirements.nav';
-import 'src/navigation-menu-items/warehouse-products.nav';
+// Register only integration outbound sync logic.
+import 'src/logic-functions/send-company-on-create.logic';
+import 'src/logic-functions/send-company-on-update.logic';
+import 'src/logic-functions/send-company-on-delete.logic';
+import 'src/logic-functions/send-opportunity-on-create.logic';
+import 'src/logic-functions/send-opportunity-on-update.logic';
+import 'src/logic-functions/send-opportunity-on-delete.logic';
+import 'src/logic-functions/send-person-on-create.logic';
+import 'src/logic-functions/send-person-on-update.logic';
+import 'src/logic-functions/send-person-on-delete.logic';
 
 import {
   APP_DESCRIPTION,
